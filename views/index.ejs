@@ -1,0 +1,29 @@
+<% include partials/header %>
+
+<script src="/js/timerScript.js"></script>
+
+<div id="main">
+
+    <h1 id="title">Pomodoro Timer</h1>
+
+    <div id="topButtons">
+        <button id="pomodoro" disabled onclick="newClock(25 * 60);" type="button" class="btn btn-outline-primary">Pomodoro</button>
+        <button id="shortBreak" disabled onclick="newClock(5 * 60);" type="button" class="btn btn-outline-primary">Short Break</button>
+        <button id="longBreak" disabled onclick="newClock(15 * 60);" type="button" class="btn btn-outline-primary">Long Break</button>
+    </div>
+
+    <h1 id="time">Press Start</h1>
+
+    <div id="bottomButtons">
+        <button id="startButton" onclick="initStart(25 * 60);" type="button" class="btn btn-outline-success">Start</button>
+        <button id="pauseButton" disabled onclick="isPaused();" type="button" class="btn btn-outline-warning">Pause</button>
+        <button id="resetButton" disabled onclick="newClock(25 * 60);" type="button" class="btn btn-outline-danger">Reset</button>
+    </div>
+
+    <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">
+        <p id="explain">What is the Pomodoro Technique?</p>
+    </a>
+
+</div>
+
+<% include partials/footer %>

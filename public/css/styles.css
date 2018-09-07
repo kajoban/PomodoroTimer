@@ -1,0 +1,59 @@
+body{
+    font-family: 'Mukta', sans-serif;
+}
+
+#title{
+    font-weight: 700;
+    font-size: 400%;
+}
+
+#time{
+    font-weight: 700;
+    font-size: 1000%;   
+}
+
+#main{
+    margin-top: 4%;
+    text-align: center;
+}
+
+#topButtons{
+    margin-top: 5%;
+}
+
+#bottomButtons{
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+#tm{
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.btn{
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 150px;
+}
+
+#explain{
+    font-size: 125%;
+    color: black;
+    text-decoration: none !important;
+}
+
+a{
+    text-decoration: none !important;  
+}
+
+#explain:hover{
+    transition: 0.1s;
+    opacity: 0.5;
+    cursor: pointer;
+    text-decoration:none;
+    color: black;
+}
